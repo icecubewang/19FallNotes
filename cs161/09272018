@@ -1,0 +1,72 @@
+//WEEK 0 LECTURE THURSDAY
+
+---------------------------------------
+
+>(+ 137 349)
+>486
+
+>(- 1000 324)
+>666
+
+>(+ (* 3 9 1) (- 10 6))
+>19
+
+>(+3)
+>3
+
+>(-5)
+>-5
+
+---------------------------------------
+
+(op arg1 ... argn)
+
+op -> function
+   -> special operator
+
+
+examples: special operator
+
+>(quote (+ 3 1))
+>(+ 3 1)
+
+>'(+ 3 1)
+>(+ 3 1)
+
+>(+ 3 1)
+>4
+
+>(setq x 3)
+>3
+
+>(setq x (+ 1 2 3))
+>6
+
+>x
+>6
+
+>y
+>*** - SYSTEM::READ-EVAL-PRINT: variable Y has no value
+
+>(setq x '(+ 1 2 3))
+>(+ 1 2 3)
+
+---------------------------------------
+
+() - the empty list / NIL
+
+* car (head)
+* cdr (tail / rest)
+
+>(setq x '(a b c))
+>(a b c)
+
+>(setq x (a b c))
+>*** - EVAL: undefined function A
+
+>(car x)
+>a
+
+>(cdr x)
+>(b c)
+
